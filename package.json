@@ -1,0 +1,39 @@
+{
+  "name": "narkobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discord-player/extractor": "^4.4.5",
+    "@discordjs/builders": "^1.7.0",
+    "@discordjs/formatters": "^0.3.3",
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/rest": "^2.2.0",
+    "@discordjs/util": "^1.0.2",
+    "@discordjs/voice": "^0.16.1",
+    "body-parser": "^1.20.2",
+    "discord-api-types": "^0.37.66",
+    "discord-player": "^6.6.6",
+    "discord-together": "^1.3.31",
+    "discord.js": "^14.14.1",
+    "express": "^4.18.2",
+    "ffmpeg": "^0.0.4",
+    "json": "^11.0.0",
+    "libopus": "^1.0.7",
+    "libsodium-wrappers": "^0.7.13",
+    "node-opus": "^0.3.3",
+    "opusscript": "^0.0.8",
+    "prism-media": "^1.3.5",
+    "sodium": "^3.0.2",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0"
+  }
+}
