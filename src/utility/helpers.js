@@ -12,7 +12,7 @@ module.exports =
         if (interaction.replied || interaction.deferred) await interaction.followUp(body);
         else await interaction.reply(body);
     },
-    interactionBodyEmbed: (desc) =>
+    interactionBodyEmbed: (desc, thumbnail = null) =>
     {
         return { embed: [new EmbedBuilder()
             .setDescription(desc)]};

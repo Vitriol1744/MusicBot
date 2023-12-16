@@ -23,6 +23,28 @@ client.player = new Player(client,
 		}
 	});
 client.player.extractors.register(YouTubeExtractor);
+const player = client.player;
+
+player.events.on('error', (queue, error) => {
+    // Emitted when the player queue encounters error
+    console.log(`General player error event: ${error.message}`);
+    console.log(error);
+});
+
+player.events.on('playerError', (queue, error) => {
+    // Emitted when the audio player errors while streaming audio track
+    if (error.name === 'ERR_NO_RESULT')
+	{
+		console.log(`Player error event: ${error.message}`);
+		console.log(`Skipping...`);
+		queue.node.skip();
+		return;
+	}
+	console.log(error.name);
+	return;
+	
+    console.log(error);
+});
 // client.verbose = true;
 
 for (const folder of commandFolders) 
